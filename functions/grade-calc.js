@@ -13,7 +13,7 @@ let gradeCalc = function(score, marks=20, percentage=100){
 
     return (score * percentage) / marks
 }
-let result = gradeCalc(4);
+let result = gradeCalc(12);
 if (result >= 90 && result <=100) {
     console.log(` You are in grade A (${result} %!)`);
 }else if (result >= 80 && result <= 89) {
