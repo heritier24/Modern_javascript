@@ -27,3 +27,15 @@ const findNote = function(notes, noteTitle) {
 }
 const note = findNote(notes, 'biology')
 console.log(note)
+
+const filterNotes = notes.filter(function(note, index){
+    return note
+})
+console.log(filterNotes)
+
+const sorting = ["heritier", "ganza", "tamba", "davy"];
+
+let display = sorting.sort();
+let reverse = sorting.reverse();
+console.log(display);
+console.log(reverse);
