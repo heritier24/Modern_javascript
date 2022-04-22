@@ -7,5 +7,23 @@
 // console.log(notes)
 
 const notes = [{
-    
-}]
+    title: "checmistry ",
+    body: "chemistry note "
+},
+{
+    title: "biology",
+    body: "biology note"
+},
+{
+    title: "mathematics",
+    body: "mathematics notes"
+}
+]
+const findNote = function(notes, noteTitle) {
+    const index = notes.findIndex(function(note, index){
+        return note.title === noteTitle
+    })
+    return notes[index]
+}
+const note = findNote(notes, 'biology')
+console.log(note)
