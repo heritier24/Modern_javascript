@@ -26,6 +26,42 @@ work.push("added todo")
 work.shift()
 
 console.log("you have "+ work.length + "work ")
-console.log(work)
 
+work.forEach(function(work, index){
+    const num = index + 1
+    console.log(`${num}. ${work}`);
+})
+// challenge area 
+// using for loop display work 
+
+for (let mywork = 0; mywork < work.length; mywork ++){
+    console.log(work[mywork]);
+}
+
+// let searching = ["ganza", "heritier", "tamba", "mynyanziza", "innocent"];
+
+// console.log(searching.indexOf('tamba'));
+
+const todoobject = [
+    {},{
+        name: 'heritier',
+        body: 'this is the name of the object ',
+       },
+    {
+        name:'ganza',
+        body:'this is another body ',
+    },
+    {
+        name:'tamba',
+        body:'this is body of tamba'
+    }
+]
+
+console.log(todoobject.indexOf({}))
+
+let someobject = {}
+
+let otherobject = someobject
+
+console.log(someobject === otherobject)
 
