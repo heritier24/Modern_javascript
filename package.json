@@ -1,0 +1,23 @@
+{
+  "name": "Modern_javascript",
+  "version": "1.0.0",
+  "description": "Learn Modern Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heritier24/Modern_javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heritier24/Modern_javascript/issues"
+  },
+  "homepage": "https://github.com/heritier24/Modern_javascript#readme",
+  "devDependencies": {
+    "jest": "^28.0.0"
+  }
+}
