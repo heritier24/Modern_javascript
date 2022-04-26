@@ -4,9 +4,9 @@ let p = document.querySelector('p')
 
 // console.log(p)
 
-// p.remove()
-let ps = document.querySelectorAll('p');
-
-ps.forEach(function(p){
-    p.textContent = '**** '
+let ps = document.querySelector('button', function(){
+    console.log("is this working ");
+});
+document.querySelector('button').addEventListener('click', function(){
+    console.log("is this working !");
 })
