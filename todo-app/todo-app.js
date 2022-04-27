@@ -12,15 +12,9 @@ document.querySelector('button').addEventListener('click', function(e){
 })
 
 
-let todo =
-    {
-        name: 'heritier',
-        gender: 'male',
-        age: 25,
-        status: 'single'
-    }
-localStorage.setItem('info', todo)
-
-let recovery = localStorage.getItem('info')
-let convert = JSON.parse(recovery)
-console.log(JSON.parse(recovery))
+document.querySelector('#new-todo').addEventListener('submit',function(e){
+    e.preventDefault()
+    // console.log(e.target.elements.text.value)
+    let p = document.querySelector('p')
+    p.textContent = e.target.elements.text.value
+})
