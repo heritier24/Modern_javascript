@@ -7,8 +7,15 @@ let p = document.querySelector('p')
 let ps = document.querySelector('button', function(){
     console.log("is this working ");
 });
-document.querySelector('button').addEventListener('click', function(e){
+document.querySelector('#create-note').addEventListener('click', function(e){
     console.log("is this working !");
     e.target.textContent = 'The button Was Clicked '
-    console.log('add Element in the paragraph ')
+    document.querySelectorAll('.note').forEach(function(note){
+        note.textContent = 'Created new note for each paragraph and the button was clicked '
+    })
+})
+document.querySelector('#remove-note').addEventListener('click',function(e){
+    document.querySelectorAll('.note').forEach(function(note){
+        note.remove();
+    })
 })
