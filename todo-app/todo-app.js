@@ -18,3 +18,6 @@ document.querySelector('#new-todo').addEventListener('submit',function(e){
     let p = document.querySelector('p')
     p.textContent = e.target.elements.text.value
 })
+document.querySelector('#hide-completed').addEventListener('change',function(e){
+    
+})
