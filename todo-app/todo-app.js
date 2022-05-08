@@ -21,3 +21,33 @@ document.querySelector('#new-todo').addEventListener('submit',function(e){
 document.querySelector('#hide-completed').addEventListener('change',function(e){
     
 })
+
+const todos = [{
+    text: "Order food ",
+    completed: true
+},
+{
+    text: "Order kichen",
+    completed: true
+},
+{
+    text: "Order drinks",
+    completed: false
+},
+{
+    text: "Do work",
+    completed: false
+},
+{
+    text: 'Excercises',
+    completed: true
+}
+]
+
+const incompleteTodos = todos.filter(function (todo){
+    return !todo.completed
+})
+const summary = document.createElement('h2')
+
+summary.textContent = `You have ${incompleteTodos.length} todo left `
+document.querySelector('body').appendChild(summary)
