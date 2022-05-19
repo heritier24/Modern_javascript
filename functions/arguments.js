@@ -10,7 +10,7 @@ console.log(result);
 
 // Default arguments 
 
-let getScoreText = function(name= "Heritier", score = 40){
+let getScoreText = (name= "Heritier", score = 40) =>{
     return 'name:' +name + "  score : " + score
 }
 
@@ -21,7 +21,7 @@ console.log(scoreText);
 
 // * 2 people go to the restaurant then after payment ask the tip for the 20 % of the bills paid
 
-let getTip = function (bills = 100, tip = 20) {
+let getTip = (bills = 100, tip = 20) => {
     return (bills * tip) /100
 }
 let tipAmount = getTip();

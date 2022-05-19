@@ -1,6 +1,6 @@
 
 
-document.querySelector('#restore').addEventListener('click', function () {
+document.querySelector('#restore').addEventListener('click',  () => {
 
     let restore = localStorage.getItem('data');
 

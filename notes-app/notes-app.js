@@ -4,7 +4,7 @@ const filters = {
     searchText: '',
     hideCompleted: false
 }
-document.querySelector('#for-fun').addEventListener('input', function (e) {
+document.querySelector('#for-fun').addEventListener('input',  (e)  =>{
     console.log(e.target.checked)
 })
 

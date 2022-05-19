@@ -3,7 +3,7 @@
 // Functions - input, code, output 
 
 
-let square = function(num){
+let square = (num) => {
 
     let result = num * num 
     return result;
@@ -19,7 +19,7 @@ console.log(othervalue);
 // convert fahrenheit to celcius 
 // call a couple of time (32->0) (68->20)
 // print the converted values 
-let fahrenheit = function(value){
+let fahrenheit = (value) => {
     let celcius = (value -32) * 5/9
     return celcius;
 }

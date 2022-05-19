@@ -3,7 +3,7 @@
 
 
 
-let fahrenheit = function(value){
+let fahrenheit = (value) => {
     let celcius = (value -32) * 5/9
     return celcius;
 }

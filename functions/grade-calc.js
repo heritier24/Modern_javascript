@@ -9,7 +9,7 @@
 // 15/20 => you got C (75%) ! 
 // A 90-100 , B 80-89, C 70-79 , D 60-69, e 0-59
 
-let gradeCalc = function(score, marks=20, percentage=100){
+let gradeCalc = (score, marks=20, percentage=100) => {
 
     return (score * percentage) / marks
 }

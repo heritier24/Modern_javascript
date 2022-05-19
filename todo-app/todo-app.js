@@ -1,24 +1,24 @@
 
 let ps = document.querySelectorAll('p');
 
-ps.forEach(function(p){
+ps.forEach((p) => {
     // p.remove()
     // p.textContent= 'added paragraph content'
 })
 
-document.querySelector('button').addEventListener('click', function(e){
+document.querySelector('button').addEventListener('click', (e) =>{
     console.log('Is this Work ? ')
     console.log(e)
 })
 
 
-document.querySelector('#new-todo').addEventListener('submit',function(e){
+document.querySelector('#new-todo').addEventListener('submit',(e) => {
     e.preventDefault()
     // console.log(e.target.elements.text.value)
     let p = document.querySelector('p')
     p.textContent = e.target.elements.text.value
 })
-document.querySelector('#hide-completed').addEventListener('change',function(e){
+document.querySelector('#hide-completed').addEventListener('change', (e) => {
     
 })
 
@@ -47,7 +47,7 @@ const seearching = {
     searchText: ''
 }
 
-const incompleteTodos = todos.filter(function (todo){
+const incompleteTodos = todos.filter( (todo) => {
     return !todo.completed
 })
 const summary = document.createElement('h2')
@@ -75,14 +75,14 @@ const renderSearch = function(todos, seearching){
 renderSearch(todos, seearching)
 
 // search todo 
-document.querySelector('#search-todo').addEventListener('input', function (e){
+document.querySelector('#search-todo').addEventListener('input', (e) => {
     seearching.searchText = e.target.value
     renderSearch(todos, seearching)
 })
 
 
 
-document.querySelector('#todo-text').addEventListener('change', function(e){
+document.querySelector('#todo-text').addEventListener('change', (e) => {
     e.preventDefault();
     console.log(e.target.value)
 })
@@ -106,7 +106,7 @@ const filters = {
 }
 
 const renderNotes = function(notes, filters){
-    const filteredNotes = notes.filter(function (note){
+    const filteredNotes = notes.filter( (note) => {
         return note.title.includes(filters.searchText)
     })
 
@@ -119,7 +119,7 @@ const renderNotes = function(notes, filters){
 }
 renderNotes(notes, filters)
 
-document.querySelector('#search-text').addEventListener('input', function(e){
+document.querySelector('#search-text').addEventListener('input', (e) => {
     filters.searchText = e.target.value
     renderNotes(notes,filters)
     console.log("ok")
