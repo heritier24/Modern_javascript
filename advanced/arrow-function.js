@@ -19,9 +19,20 @@ const people = [{
 },
 {
     name: "Tamba",
-    age: 21
+    age: 22
 }]
+
+const serarching = {
+    search : ''
+}
 
 const under30 = people.filter( (person) => person.age < 30 )
 
 console.log(under30);
+
+// challenge 
+// 1. find the person with the age is equatl to 25 
+// 2. print that person 
+
+const person = people.find( (person) => person.age === 22)
+console.log(person.name)
