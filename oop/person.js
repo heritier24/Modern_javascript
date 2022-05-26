@@ -7,4 +7,4 @@ const Person = function(firstName, lastName, age){
 
 const me = new Person("heritier", "ganza ", 51)
 
-console.log(me.firstName)
+console.log(`Dear ${me.firstName}, your age is ${me.age}. Thank you`)
